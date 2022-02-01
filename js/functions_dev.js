@@ -95,7 +95,13 @@ function startHeartAnimation() {
 
 function timeElapse(date){
 	var current = Date();
-	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
+	var seconds = (Date.parse(date) - Date.parse(current)) / 1000;
+	// console.log(seconds / (3600 * 24));
+	console.log("aa");
+
+	console.log(current);
+	console.log(date);
+
 	var days = Math.floor(seconds / (3600 * 24));
 	seconds = seconds % (3600 * 24);
 	var hours = Math.floor(seconds / 3600);
@@ -129,7 +135,7 @@ function adjustWordsPosition() {
 }
 
 function adjustCodePosition() {
-	$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2);
+	$('#code').css("margin-top", ($("#garden").height() - $("#code").height()) / 2 - 50);
 }
 
 function showLoveU() {
