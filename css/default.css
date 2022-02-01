@@ -32,12 +32,14 @@ body {
 #words {
     font-family: "sans-serif";
     width: 500px;
-    font-size: 14px;
-    color: #666
+    font-size: 16px;
+    color: #429E9D
 }
 
 #messages {
-	margin-left: 130px;
+	/* margin-left: 100px; */
+    margin-top: 140px;
+    margin-left: 120px;
     display: none
 }
 
@@ -48,16 +50,17 @@ body {
 
 #loveu {
     padding: 5px;
-    font-size: 14px;
-    margin-top: 120px;
-    margin-right: 100px;
-    text-align: right;
+    font-size: 15px;
+    margin-top: -200px;
+    margin-left: 30px;
+    text-align: center;
     display: none
 }
 
 #loveu .signature {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
     font-style: italic
 }
 
@@ -69,9 +72,9 @@ body {
     float: left;
     width: 440px;
     height: 400px;
-    color: #333;
+    color: #429E9D;
     font-family: "Consolas", "Monaco", "Bitstream Vera Sans Mono", "Courier New", "sans-serif";
-    font-size: 12px
+    font-size: 13px
 }
 
 #code .string {
@@ -79,12 +82,13 @@ body {
 }
 
 #code .keyword {
-    color: #7f0055;
+    color: #429E9D;
     font-weight: bold
 }
 
 #code .placeholder {
     margin-left: 15px
+
 }
 
 #code .space {
@@ -92,7 +96,7 @@ body {
 }
 
 #code .comments {
-    color: #3f7f5f
+    color: #429E9D
 }
 
 #copyright {
