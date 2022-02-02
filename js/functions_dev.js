@@ -43,6 +43,9 @@ function getHeartPoint(angle) {
 }
 
 function startHeartAnimation() {
+	console.log("playaudio");
+	var audio = new Audio('/testing/lalungnammoi.mp3');
+	audio.play();
 	var interval = 5;
 	var angle = 0;
 	var heart = new Array();
@@ -97,10 +100,6 @@ function timeElapse(date){
 	var current = Date();
 	var seconds = (Date.parse(date) - Date.parse(current)) / 1000;
 	// console.log(seconds / (3600 * 24));
-	console.log("aa");
-
-	console.log(current);
-	console.log(date);
 
 	var days = Math.floor(seconds / (3600 * 24));
 	seconds = seconds % (3600 * 24);
