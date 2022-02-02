@@ -2,7 +2,7 @@
 var $window = $(window), gardenCtx, gardenCanvas, $garden, garden;
 var clientWidth = $(window).width();
 var clientHeight = $(window).height();
-
+var isPlayed = false;
 $(function () {
     // setup garden
 	$loveHeart = $("#loveHeart");
@@ -45,7 +45,17 @@ function getHeartPoint(angle) {
 function startHeartAnimation() {
 	console.log("playaudio");
 	var audio = new Audio('/testing/lalungnammoi.mp3');
-	audio.play();
+	document.addEventListener("click", function(event) {
+		console.log("clicked");
+		
+		if (!isPlayed ) 
+		{
+			isPlayed = true;
+			audio.play();
+			
+		}
+	  })
+	  
 	var interval = 5;
 	var angle = 0;
 	var heart = new Array();
