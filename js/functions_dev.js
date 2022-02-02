@@ -44,7 +44,7 @@ function getHeartPoint(angle) {
 
 function startHeartAnimation() {
 	console.log("playaudio");
-	var audio = new Audio('/testing/lalungnammoi.mp3');
+	var audio = new Audio('/lalungnammoi.mp3');
 	document.addEventListener("click", function(event) {
 		console.log("clicked");
 		if (!isPlayed ) 
